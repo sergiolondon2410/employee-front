@@ -7,18 +7,21 @@
       @delete:employee="deleteEmployee"
       @edit:employee="editEmployee"
     />
+    <udemy/>
   </div>
 </template>
 
 <script>
 import EmployeeTable from '@/components/EmployeeTable.vue';
 import EmployeeForm from '@/components/EmployeeForm.vue';
+import Udemy from '@/components/Udemy.vue';
 
 export default {
   name: 'app',
   components: {
     EmployeeTable,
-    EmployeeForm
+    EmployeeForm,
+    Udemy
   },
   data() {
     return {
